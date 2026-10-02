@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linematya Support</title>
+<meta name="description" content="Support for Linematya, a line boil drawing app for iPad.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230A0A0B'/%3E%3Ctext x='32' y='45' font-family='system-ui,sans-serif' font-weight='900' font-size='36' fill='%23D4FF3A' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;800;900&display=swap">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    background: #0A0A0B;
+    color: #F6F6F4;
+    font-family: "Inter Tight", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100dvh;
+    display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+    padding: clamp(24px, 6vw, 96px);
+  }
+  main > * { max-width: 100%; }
+  h1 {
+    font-weight: 900;
+    font-size: clamp(56px, 10vw, 132px);
+    line-height: .92;
+    letter-spacing: -.045em;
+    max-width: min(11ch, 100%);
+    text-wrap: balance;
+  }
+  h1 .dot { color: #D4FF3A; }
+  p {
+    margin-top: clamp(20px, 3vw, 32px);
+    font-size: clamp(18px, 2.2vw, 26px);
+    line-height: 1.35;
+    font-weight: 500;
+    color: rgba(246, 246, 244, .55);
+    max-width: min(38ch, 100%);
+    text-wrap: pretty;
+  }
+  .cta {
+    margin-top: clamp(32px, 5vw, 56px);
+    display: inline-flex; align-items: center; gap: 12px;
+    padding: 0 30px; height: 66px; border-radius: 999px;
+    background: #D4FF3A; color: #0D0F05;
+    font-weight: 800; font-size: 19px; letter-spacing: -.01em; text-decoration: none;
+    box-shadow: 0 18px 40px -18px rgba(212, 255, 58, .55);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 24px 48px -18px rgba(212, 255, 58, .7); }
+  .cta:focus-visible { outline: 3px solid #F6F6F4; outline-offset: 4px; }
+  .cta svg { width: 18px; height: 18px; }
+  nav {
+    margin-top: clamp(28px, 4vw, 44px);
+    display: flex; flex-wrap: wrap; gap: 22px;
+    font-size: 16px; font-weight: 500;
+  }
+  nav a { color: rgba(246, 246, 244, .5); text-decoration: none; }
+  nav a:hover { color: #E6FF8A; }
+  @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Need a hand<span class="dot">?</span></h1>
+    <p>Support for Linematya on iPad. Bugs, questions, or feedback about the app — write and I’ll answer.</p>
+    <a class="cta" href="mailto:nika+linematya@animatya.com?subject=Linematya%20support">
+      Email support
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+    <nav>
+      <a href="terms.html">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </main>
+</body>
+</html>
